@@ -1,0 +1,63 @@
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Open sans';
+    padding: 0;
+    margin: 0;
+}
+
+.app-main {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.skills-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 56rem;
+    font-size: 2.2rem;
+    gap: 1.5rem;
+    font-weight: lighter;
+    text-shadow: 0.5px 1px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+.skills-title svg {
+    width: 1.8rem;
+}
+
+.skills-section {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-around;
+    position: relative;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(-100%);
+    transition: all 1.2s;
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+@media (max-width: 768px) {
+    .skills-title {
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+
+    .skills-section {
+        flex-direction: column;
+    }
+}

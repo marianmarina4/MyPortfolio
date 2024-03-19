@@ -1,0 +1,59 @@
+.projectCard-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 27rem;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, .2);
+    background-color: rgb(39, 39, 39);
+}
+
+.projectCard-boxImage {
+    width: 100%;
+    max-height: 15rem;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.projectCard-boxImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .4);
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.projectCard-boxImage img:hover {
+    transform: scale(1.1);
+}
+
+.projectCard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.projectCard-title {
+    font-size: 1.7rem;
+    font-weight: lighter;
+    text-shadow: 0.5px 1px rgba(0, 0, 0, 0.3);
+    margin: 1rem 0;
+}
+
+.projectCard-description {
+    font-weight: lighter;
+    color: white;
+    text-shadow: 0.2px 0.2px rgba(0, 0, 0, 0.9);
+    font-size: 1.05rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .projectCard-main {
+        max-width: 20rem;
+    }
+}
